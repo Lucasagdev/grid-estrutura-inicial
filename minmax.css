@@ -1,0 +1,20 @@
+.container div {
+    border: 1px solid black;
+    background-color: #8a2be2;
+    color: white;
+}
+
+.container{
+    display: grid;
+
+    grid-template-columns: 
+    
+    /* primeira coluna */
+    minmax(100px, 800px) 
+    
+    /* segunda coluna */
+    repeat(2,minmax(100px, 300px)) 
+    
+    /* terceira coluna */
+    minmax(auto, auto);
+}
